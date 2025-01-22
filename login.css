@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #B6C1D4, #EC68B1, #7062F0);
+    background-size: 400% 400%;
+    font-family: Arial, sans-serif;
+}
+
+/* @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 50% 100%; }
+    100% { background-position: 100% 0%; }
+} */
+
+.login-container {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    width: 320px;
+}
+
+.login-container::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.profile-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(90deg, #B6C1D4, #c9abc8, #a39be7);
+    border-radius: 50%;
+    margin: -50px auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+.profile-icon img{
+width: 40px;
+height: 40px; 
+border-radius: 50%;
+
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    /* background: #788aaf; */
+    background: linear-gradient(90deg, #B6C1D4, #c9abc8, #a39be7);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input-field input {
+    border: none;
+    outline: none;
+    background: transparent;
+    background-color: trasparent;
+    color: rgb(8, 8, 8);
+    flex: 1;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.input-field img{
+    width: 25px;
+    height: 25px;
+   
+}
+
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #555;
+}
+
+.login-button {
+    /* background: #788aaf; */
+    background: linear-gradient(90deg, #B6C1D4, #c9abc8, #a39be7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+
+   
+}
+
+.login-button:hover {
+    background: #1d273d;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
